@@ -170,6 +170,6 @@ if (submit_button_upload) or (st.session_state.button_clicked_1):
             with col:
                 gen_reporte = st.button(label = 'Genera Reporte')
                 if (gen_reporte):
-                    add_picture_and_text(r'pages\reporte.html', 'otros_insumos\imagenes_temporales')
-                    genera_reporte(r'pages\reporte.html') 
+                    add_picture_and_text(here('pages','reporte.html'), here('otros_insumos','imagenes_temporales'))
+                    genera_reporte(here('pages','reporte.html')) 
         
