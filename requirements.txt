@@ -8,3 +8,4 @@ pyhere==1.0.0
 scikit-learn==1.2.0
 shap==0.41.0
 streamlit==1.16.0
+MAPIE==0.6.4
