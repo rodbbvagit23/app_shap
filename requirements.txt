@@ -11,3 +11,4 @@ shap==0.41.0
 streamlit==1.16.0
 MAPIE==0.6.4
 ipython==7.34.0
+mxnet-mkl==1.6.0
