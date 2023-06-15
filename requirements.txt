@@ -2,7 +2,7 @@ pip==22.0.4
 matplotlib==3.6.3
 matplotlib-inline==0.1.6
 multipledispatch==0.6.0
-numpy==1.23.5
+numpy==1.23.1
 pandas==1.5.2
 Pillow==9.4.0
 pyhere==1.0.0
