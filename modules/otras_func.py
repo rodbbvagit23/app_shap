@@ -97,7 +97,7 @@ def add_picture_and_text(file, link_imgtemp):
     
 def actualiza_diccionario_texto(dictio):
     if len(dictio)>0:
-        archivos = os.listdir(r'otros_insumos\imagenes_temporales')
+        archivos = os.listdir(here('otros_insumos','imagenes_temporales'))
         if 'dict_texto.pickle' not in archivos:
             dictio
             with open(r'otros_insumos\imagenes_temporales\dict_texto.pickle', 'wb') as f:
