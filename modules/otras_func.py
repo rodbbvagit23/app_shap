@@ -48,10 +48,10 @@ def genera_reporte(x):
     
 def add_picture_and_text(file, link_imgtemp):
     
-    with open(r'otros_insumos\imagenes_temporales\dict_texto.pickle', 'rb') as f:
+    with open(here('otros_insumos','imagenes_temporales','dict_texto.pickle'), 'rb') as f:
         my_dict_texto = pickle.load(f)
         
-    with open(r'otros_insumos\imagenes_temporales\intro.pickle', 'rb') as f:
+    with open(here('otros_insumos','imagenes_temporales','dict_texto.pickle'), 'rb') as f:
         intro = pickle.load(f)
    
     mensaje_part1 = '''<html>
@@ -100,13 +100,13 @@ def actualiza_diccionario_texto(dictio):
         archivos = os.listdir(here('otros_insumos','imagenes_temporales'))
         if 'dict_texto.pickle' not in archivos:
             dictio
-            with open(r'otros_insumos\imagenes_temporales\dict_texto.pickle', 'wb') as f:
+            with open(here('otros_insumos','imagenes_temporales','dict_texto.pickle'), 'wb') as f:
                 pickle.dump(dictio, f)
         else:
-            with open(r'otros_insumos\imagenes_temporales\dict_texto.pickle', 'rb') as f:
+            with open(here('otros_insumos','imagenes_temporales','dict_texto.pickle'), 'rb') as f:
                 old_dictio = pickle.load(f)
             old_dictio.update(dictio)
-            with open(r'otros_insumos\imagenes_temporales\dict_texto.pickle', 'wb') as f:
+            with open(here('otros_insumos','imagenes_temporales','dict_texto.pickle'), 'wb') as f:
                 pickle.dump(old_dictio, f)
     else:
         pass
