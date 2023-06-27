@@ -5,7 +5,7 @@ import mapie
 import webbrowser
 from pyhere import here
 import os 
-import pickle
+import base64
 
 
 
