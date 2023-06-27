@@ -171,5 +171,7 @@ if (submit_button_upload) or (st.session_state.button_clicked_1):
                 gen_reporte = st.button(label = 'Genera Reporte')
                 if (gen_reporte):
                     add_picture_and_text(here('pages','reporte.html'), here('otros_insumos','imagenes_temporales'))
-                    genera_reporte(here('pages','reporte.html')) 
+                    # genera_reporte(here('pages','reporte.html')) 
+                    st.markdown(create_download_link(here('pages','reporte.html'), 'reporte.html'), unsafe_allow_html=True)
+        
         
