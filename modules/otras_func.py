@@ -111,4 +111,11 @@ def actualiza_diccionario_texto(dictio):
     else:
         pass
         
-    
+
+# Function to create a download link
+def create_download_link(file_path, file_name):
+    with open(file_path, "rb") as file:
+        contents = file.read()
+    b64 = base64.b64encode(contents).decode()
+    href = f'<a href="data:file/html;base64,{b64}" download="{file_name}">Download {file_name}</a>'
+    return href
